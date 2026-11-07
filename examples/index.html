@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nepali Patro widget: examples</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 0 auto; padding: 24px 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    h2 { font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Nepali Patro and Rashifal widget</h1>
+  <p>Open this file in a browser to see every option. Docs: <a href="../README.md">README</a>.</p>
+
+  <div class="grid">
+    <section>
+      <h2>Patro + rashifal, Nepali (the default)</h2>
+      <a class="antaryami-widget" href="https://antaryami.com.au/patro">नेपाली पात्रो र राशिफल — अन्तर्यामी</a>
+    </section>
+
+    <section>
+      <h2>Patro only, English</h2>
+      <a class="antaryami-widget" href="https://antaryami.com.au/patro"
+         data-type="patro" data-lang="en">Nepali Patro by Antaryami</a>
+    </section>
+
+    <section>
+      <h2>Rashifal only, English, dark, opens on Simha</h2>
+      <a class="antaryami-widget" href="https://antaryami.com.au/rashifal"
+         data-type="rashifal" data-lang="en" data-theme="dark" data-sign="simha">Today's Rashifal by Antaryami</a>
+    </section>
+  </div>
+
+  <script async src="https://antaryami.com.au/widget.js"></script>
+</body>
+</html>
